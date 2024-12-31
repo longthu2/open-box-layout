@@ -273,3 +273,25 @@
 	animation: none;
 	transform: translate3d(0, -120px, -120px) rotateX(50deg);
   }
+
+  /* RESPONSIVE DESIGN */
+
+/* For smaller screens */
+@media (max-width: 768px) {
+	:root {
+	  --size: 150px; /* Reduce the size for smaller screens */
+	}
+	.instruction {
+	  font-size: 14px; /* Smaller text for instructions */
+	}
+  }
+  
+  /* For extra small screens */
+  @media (max-width: 480px) {
+	:root {
+	  --size: 100px; /* Further reduce size */
+	}
+	.instruction {
+	  font-size: 12px; /* Even smaller text for instructions */
+	}
+  }
